@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Crop Data Upload | Admin</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="images/icons/logo.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/style1.css">
+	<style>
+.banner{
+   background-image: url('images/bg-04.jpg');
+ 
+/* Full height */
+
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  padding: 0 10px;
+}
+  .ftco-navbar-light .navbar-brand {
+    color: lightblue;
+}
+.ftco-navbar-light {
+  background: #007ee5 !important;
+  z-index: 3;
+  padding: 0; }
+  .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+    font-size: 11px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 1 !important; }
+    
+
+    
+.ftco-navbar-light.scrolled .nav-item.cta > a {
+    color: #fff !important;
+    background: rgb(16, 118, 202);
+    border: none !important;
+}
+    .mouse-icon {
+  width: 60px;
+  height: 60px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  background: #063f6e;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  display: block; }
+  a.hover {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    color: rgb(16, 118, 202) ;
+}
+    
+.ftco-section {
+  padding: 10em 0;
+  position: relative; 
+}
+  
+  .container {
+  width: 70%;
+  
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+  .billing-form .form-control {
+  font-weight: 300;
+  border: transparent !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  height: 58px !important;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: transparent !important;
+  color: rgb(0, 0, 0) !important;
+  font-size: 14px;
+  border-radius: 0px;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important; }
+  .billing-heading {
+  font-size: 24px; 
+  
+}
+form{
+	border: 3px  solid rgb(58 10 175 / 63%);
+	padding: 20px;
+}
+#profile-pic {
+		border: 50px;
+  border: 1px solid #777676ab;
+  float: left;
+  margin-right: 10px;
+  /* If you want to crop the image to a certain size, use something like this */
+  object-fit: cover;
+  width: 170px;
+  height: 170px;
+}
+.w3-main {
+    width: 30%;
+    margin: 0 auto;
+}
+.form-w3l {
+    text-align: center;
+	
+	
+}
+        .hide1{
+            display: none;
+        }
+         .hide2{
+            display: none;
+        }
+         .hide3{
+            display: none;
+        }
+        .hide4{
+            display: none;
+        }
+
+	</style>
+  </head>
+  <body class="goto-here">
+<script type="text/javascript">		
+    function showhide()
+    { for(var j=1; j<5; j++)
+        {
+        var check= document.getElementById("chk"+j);
+        var hide= document.getElementsByClassName("hide"+j);
+        for(var i=0; i!= hide.length; i++)
+        {
+            if(check.checked){
+                hide[i].style.display= "block";
+            }
+            else{
+                hide[i].style.display= "none";
+            }
+            
+        }
+        }
+    }
+      </script>
+   
+ <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" style="padding-left: 20px; padding-right: 20px">
+	  
+	      <a class="navbar-brand" href="#">Farm Assistant</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+            
+	     `
+	 
+	  </nav>
+    <!-- END nav -->
+    <div class="hero-wrap hero-bread" style="background-image: url('images/progress.jpg');">
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+          <div class="col-md-9 ftco-animate text-center">
+          	<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span></p>
+            <h1 class="mb-0 bread">Upload Crop Data</h1>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <div class="banner">
+      <div class="container">
+        <div class="row justify-content-center" style="padding-top: 10px">
+          <div class="col-xl-7 ftco-animate">
+						<form action="crop-data-up.php" method="post" enctype="multipart/form-data" class="billing-form"style="background-color: white; ">
+							<h3 class="mb-4 billing-heading" style="text-align: center;">Crop Data Upload</h3>
+	          	<div class="row align-items-end">
+	          		
+	              
+		            
+		            <div class="w-100"></div>
+		            <div class="col-md-12">
+		            	<div class="form-group">
+	                	<label for="heading">Crop name</label><span style="color: red;">*</span>
+	                  <input type="text"name="name" class="form-control" placeholder="" required>
+	                </div>
+		            </div>
+                    <div class="col-md-12">
+						<div class="form-group">
+							<label for="image">Image</label><span style="color: red;">*</span>
+						
+						</div>
+					  </div>
+					  <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
+					<div class="w3-main">
+							<div class="form-w3l" style="padding-left: 50px;">
+								
+								<img scr="images/person_3.jpg " id="profile-pic" required />
+								
+					
+								</div>
+					</div>
+					<div style="float: right"><input type="file" name="image" id="my-file" />
+					</div>
+                     <div class="w-100"></div>
+		            <div class="col-md-12">
+		            	<div class="form-group">
+	                	<label for="heading">Heading 1</label><span style="color: red;">*</span>
+	                  <input type="text"name="heading1" class="form-control" placeholder="" required>
+	                </div>
+		            </div>
+		            <div class="col-md-12">
+		            	<div class="form-group">
+							<label for="heading">Description 1</label><span style="color: red;">*</span>
+							<textarea name="des1" id="" cols="50" rows="5" class="form-control" required></textarea>
+						  </div>
+		            </div>
+                    <div class="col-md-12">
+		            	<div class="form-group">
+                            <input type=checkbox id="chk1" name="chk1" onclick="showhide()"><span> More</span>
+                        </div>
+                    </div>
+                        
+                   <!-- <button type="button" class="quantity-right-plus btn" data-type="plus" data-field="" id="button">
+	                     <i class="ion-ios-add"style="color: black">Heading</i>
+	                 </button>-->
+                     <div class="w-100"></div>
+                    <div class="hide1">
+		            <div class="col-md-12">
+		            	<div class="form-group">
+	                	<label for="heading">Heading 2</label><span style="color: red;">*</span>
+	                  <input type="text"name="heading2" class="form-control" placeholder="" required>
+	                </div>
+		            </div>
+                    <div class="col-md-12">
+		            	<div class="form-group">
+							<label for="heading">Description 2</label><span style="color: red;">*</span>
+							<textarea name="des2" id="" cols="50" rows="5" class="form-control" required></textarea>
+						  </div>
+		            </div>
+                    
+                     <div class="col-md-12">
+		            	<div class="form-group">
+                            <input type=checkbox id="chk2" name="chk2" onclick="showhide()"><span> More</span>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="hide2">
+		            <div class="w-100"></div>
+					 <div class="col-md-12">
+		            	<div class="form-group">
+	                	<label for="heading">Heading 3</label><span style="color: red;">*</span>
+	                  <input type="text"name="heading3" class="form-control" placeholder="" required>
+	                </div>
+		            </div>
+                    <div class="col-md-12">
+		            	<div class="form-group">
+							<label for="heading">Description 3</label><span style="color: red;">*</span>
+							<textarea name="des3" id="" name="des3" cols="50" rows="5" class="form-control" required></textarea>
+						  </div>
+		            </div>
+                     <div class="col-md-12">
+		            	<div class="form-group">
+                            <input type=checkbox id="chk3" name="chk3"onclick="showhide()"><span> More</span>
+                        </div>
+                    </div>
+	               </div>
+                     <div class="hide3">
+		            <div class="w-100"></div>
+					 <div class="col-md-12">
+		            	<div class="form-group">
+	                	<label for="heading">Heading 4</label><span style="color: red;">*</span>
+	                  <input type="text"name="heading3" class="form-control" placeholder="" required>
+	                </div>
+		            </div>
+                    <div class="col-md-12">
+		            	<div class="form-group">
+							<label for="heading">Description 4</label><span style="color: red;">*</span>
+							<textarea name="des3" id="" cols="50" rows="5" class="form-control" required></textarea>
+						  </div>
+		            </div>
+                     <div class="col-md-12">
+		            	<div class="form-group">
+                            
+                        </div>
+                    </div>
+	               </div>
+                     <div class="hide4">
+		            <div class="w-100"></div>
+					 <div class="col-md-12">
+		            	<div class="form-group">
+	                	<label for="heading">Heading 3</label><span style="color: red;">*</span>
+	                  <input type="text"name="heading3" class="form-control" placeholder="" required>
+	                </div>
+		            </div>
+                    <div class="col-md-12">
+		            	<div class="form-group">
+							<label for="heading">Description 3</label><span style="color: red;">*</span>
+							<textarea name="des3" id="" cols="50" rows="5" class="form-control" required></textarea>
+						  </div>
+		            </div>
+                     
+				<div class="w-100"></div>
+				<br> 
+				
+               
+				</div>
+				
+                <div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							     
+									<button class="btn btn-primary" style="background-color: blueviolet; ">
+										Upload
+									</button>
+								
+							
+						</div>
+					</div>
+	          
+					</div>
+                    </form><!-- END -->
+				</div>	
+        </div>
+      </div>
+   <br><br>
+	</div>
+    
+<!--copy rights start here-->
+<div class="copyrights">
+	 <p>© 2020 Farm Assistant. All Rights Reserved | Design by A3F creations </p>
+</div>	
+    
+  
+
+ <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+	document.getElementById("my-file").onchange = function() {
+if (this.files && this.files[0]) {
+var reader = new FileReader();
+reader.onload = function(e) {
+  // e.target.result is a base64-encoded url that contains the image data
+  document.getElementById('profile-pic').setAttribute('src', e.target.result);
+};
+reader.readAsDataURL(this.files[0]);
+}
+}</script>
+ 
+    
+  </body>
+</html>
